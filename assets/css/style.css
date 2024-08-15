@@ -132,16 +132,14 @@ body{
     width: 45%;
 }
 .hero__media{
-    width: 55%;
+    flex-grow: 1;
+    text-align: right;
 }
 .hero__desc{
     color: var(--text-color-1);
     margin-top: 22px;
     font-size: 18px;
     font-weight: 300;
-}
-.hero__media{
-    text-align: right;
 }
 .hero__phone{
     color: #FFF;
@@ -156,7 +154,21 @@ body{
 }
 .hero__image{
     display: inline-flex;
-    gap:-6px;
+    align-items: center;
+}
+.hero__image img{
+    border-radius: 6px;
+    object-fit: cover;
+    width: 330px;
+    height: 540px;
+}
+.hero__image img:first-child{
+    margin-right: -6px;
+    position: relative;
+}
+.hero__image img:last-child{
+    width: 210px;
+    height: 410px;
 }
 /* Service */
 .section-heading{
@@ -172,6 +184,12 @@ body{
     display: flex;
     margin-top: 70px;
     justify-content: space-between;
+}
+.service__image img{
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 .service__list{
     margin-top: 30px;
@@ -259,7 +277,7 @@ body{
 .work-list__item{
     border: 16px solid #EAF6FF;
     border-radius: 4px;
-    padding: 44px;
+    padding: 42px;
     background: #FFF;
 }
 .work-list__link{
@@ -268,4 +286,52 @@ body{
     color: var(--text-color-2);
     font-size: 16px;
     font-weight: 300;
+}
+/* Features */
+.features{
+    padding: 170px 0;
+}
+.features__image{
+    position: relative;
+    padding-right: 58px;
+    padding-bottom: 121px;
+}
+.features-media{
+    width: 48%;
+}
+.features-row{
+    display: flex;
+    column-gap: 130px;
+}
+.features-heading{
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.features-desc{
+    margin-top: 18px;
+    color: var(--text-color-2);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.features-button{
+    margin-top: 38px;
+}
+.features-img{
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.features__content{
+    margin-top: 82px;
+}
+.features-img:last-child{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 332px;
+    height: 370px;
 }
