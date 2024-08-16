@@ -549,3 +549,48 @@ body{
 .news-meadia__text{
     padding: 18px 21px;
 }
+/* Appointment */
+.appointment{
+    padding: 85px 0 170px;
+}
+.appointment-block{
+    background-color: #F6FBFF;
+    text-align: center;
+    padding: 100px 0;
+}
+.appointment-heading{
+    position: relative;
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 18px;
+}
+.appointment-heading::after{
+    content:"";
+    background-color: #2E80CE;
+    width: 136px;
+    height: 2px;
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* hoặc */
+    /* right: 50%;
+    transform: translateX(50%); */
+}
+.appointment-desc{
+    margin: 18px auto 0;
+    color: var(--text-color-2);
+    text-align: center;
+    width: 618px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px; /* 175% */
+}
+.appointment-button{
+    margin-top: 38px;
+    padding: 15px 40px;
+    border-radius: 30px;
+}
