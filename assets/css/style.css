@@ -98,9 +98,25 @@ body{
     font-weight: 300;
 }
 .navbar__list{
+    position: relative;
     display: inline-flex;
     gap: 42px;
     margin-left: 318px;
+}
+.navbar__list::before{
+    content:"";
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;   
+    position: absolute; 
+    display: inline-block;
+    top: 7px;
+    left: -15px;
+}
+.navbar__item:hover a{
+    text-shadow: 1px 0 0 currentColor;
+    color: white;
 }
 .navbar__item a{
     color: var(--text-color-1);
@@ -280,6 +296,11 @@ body{
     border-radius: 4px;
     padding: 42px;
     background: #FFF;
+    transition: 0.75s;
+}
+.work-list__item:hover{
+    transform: translateY(-18px);
+    border-color: #2E80CE;
 }
 .work-list__link{
     display: inline-block;
